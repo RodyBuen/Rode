@@ -1,7 +1,7 @@
 
 #banner{
     min-height: 100vh;
-    background: linear-gradient(to right, hsla(0, 20%, 99%, 0.445), rgb(44, 42,42, 0315)), url('https://img.freepik.com/free-photo/coffee-beans-with-props-making-coffee_1220-4536.jpg?t=st=1711074804~exp=1711078404~hmac=18ba238f80dbc28d42d54b1c5e0e1cea6b4ee979bd97dd0a46d88de71dd53f3e&w=740');
+    background: linear-gradient(to right, hsla(0, 20%, 99%, 0.301), rgb(44, 42,42, 0315)), url('https://img.freepik.com/free-photo/coffee-beans-with-props-making-coffee_1220-4536.jpg?t=st=1711074804~exp=1711078404~hmac=18ba238f80dbc28d42d54b1c5e0e1cea6b4ee979bd97dd0a46d88de71dd53f3e&w=740');
     background-size: cover;
 }
 
@@ -14,6 +14,7 @@ section{
     transition: all 0.4s ease;
     font-weight: 800;
     border-radius: 0;
+    background: #ffd000;
 }
 
 .btn-brand:hover{
@@ -78,14 +79,172 @@ section{
 }
 
 #reviews {
-    background-color: var(--white);
+    background-color: #202020;
+}
+
+#reviews .container p{
+    color: #dee2e6;
 }
 
 :root {
-    --bg1: #976705c2;
+    --bg1: #fac003;
     --bg2: #979197;
     --body: rgb(95, 86, 86);
     --brand: #ffef08;
-    --white: rgb(255, 255, 255);
+    --white: rgb(0, 0, 0);
     --p: rgb(161, 150, 150);
+}
+
+#about {
+    background-color: #202020;
+}
+
+#about .container h2 {
+    color: white;
+}
+
+#about .container p {
+    color: white;
+}
+
+/* #faq {
+    background-color: #000000;
+} */
+
+.faq-section {
+    max-width: 800px;
+    margin: auto;
+  }
+
+  .faq-item {
+    margin-bottom: 20px; /* Add margin bottom for spacing */
+    border-radius: 0 !important;
+  }
+
+  .faq-question {
+    background-color: #f8f9fa;
+    border: none;
+    border-bottom: 1px solid #dee2e6;
+    border-radius: 0;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #222222;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Add transition for smooth hover effect */
+  }
+
+  .faq-answer {
+    border-left: 3px solid var(--brand);
+    padding: 10px 15px;
+    margin-left: 0;
+    background-color: #f8f9fa;
+  }
+
+  .faq-answer p {
+    margin-bottom: 0;
+  }
+
+  .accordion-button:focus {
+    box-shadow: none;
+  }
+
+  .accordion-button:not(.collapsed) {
+    color: var(--bg1);
+  }
+
+  /* Hover effect for FAQ questions */
+  .faq-question:hover {
+    background-color: var(--brand); /* Change background color on hover */
+    color: var(--bg1); /* Change text color on hover */
+  }
+
+  /* Adjust accordion icon */
+  .accordion-button::after {
+    font-family: "Font Awesome 5 Free";
+    content: ""; /* Plus icon */
+    float: right;
+    font-weight: 900;
+    margin-left: auto;
+  }
+
+  .accordion-button[aria-expanded="true"]::after {
+    content: ""; /* Minus icon */
+    
+  }
+
+  #footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #202020;
+}
+
+#footer ul.list-unstyled li a {
+    color: #ffffff;
+}
+
+#footer ul.list-unstyled li:hover a {
+    color: var(--brand) ;
+}
+
+#reviews h2, #services h2 {
+    color: var(--bg1);
+}
+
+.btn-outline-light {
+    border-color: #F2B03B !important;
+    color: #F2B03B;
+}
+
+#footer h5 {
+    color: var(--brand);
+    margin-bottom: 15px;
+}
+
+
+@media only screen and (max-width: 767px) {
+    h1 , h2 {
+        font-size: 45px;
+        text-align: center;
+    }
+    #banner p {
+        text-align: center;
+
+    }
+    .btn {
+        font-size: 14px !important;
+        padding: 18px 0px;
+        width: 180px;
+    }
+    section {
+        padding: 60px 10px;
+    }
+
+    #about h3, #about p {
+        text-align: center;
+    }
+
+   .card {
+    margin-bottom: 30px;
+   }
+
+   #cta h2 , #cta2 h2{
+    font-size: 35px;
+   }
+
+   #about:after {
+    display: none;
+   }
+
+   #footer {
+    padding: 50px 20px;
+   }
+
+   #about img {
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+   }
+
+    
 }
