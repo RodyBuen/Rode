@@ -1,0 +1,91 @@
+
+#banner{
+    min-height: 100vh;
+    background: linear-gradient(to right, hsla(0, 20%, 99%, 0.445), rgb(44, 42,42, 0315)), url('https://img.freepik.com/free-photo/coffee-beans-with-props-making-coffee_1220-4536.jpg?t=st=1711074804~exp=1711078404~hmac=18ba238f80dbc28d42d54b1c5e0e1cea6b4ee979bd97dd0a46d88de71dd53f3e&w=740');
+    background-size: cover;
+}
+
+section{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.btn{
+    padding: 15px 30px;
+    transition: all 0.4s ease;
+    font-weight: 800;
+    border-radius: 0;
+}
+
+.btn-brand:hover{
+    background-color: transparent;
+    color: rgb(255, 140, 0);
+    border-color: #F2B03B;
+}
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.icon-img-box{
+    width: 40%;
+}
+
+.card{
+    transition: background-color 0.3s, 0.3s;
+}
+
+.card:hover{
+    background-color: #4b3511;
+}
+
+.card:hover .card-title,
+.card:hover .card-text,
+.card:hover .btn {
+    color: #fff;
+}
+
+.btn-outlined-brand {
+    color: #000000;
+    background-color: transparent;
+    border-color: #ff9900;
+}
+
+.btn-outlined-brand:hover {
+    background-color: #F2B03B;
+}
+
+#cta {
+    min-height: 100vh;
+    background: linear-gradient(to right, hsla(0, 20%, 99%, 0.445), rgb(44, 42,42, 0315)), url('https://img.freepik.com/free-photo/coffee-beans-with-props-making-coffee_1220-4536.jpg?t=st=1711074804~exp=1711078404~hmac=18ba238f80dbc28d42d54b1c5e0e1cea6b4ee979bd97dd0a46d88de71dd53f3e&w=740');
+    min-height: 70vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+.testimonials img {
+    width: 65px;
+    border-radius: 100px;
+    height: 65px;
+}
+
+.testimonials {
+    background-color: var(--bg1);
+    padding: 30px;
+}
+
+#reviews a {
+    color: var(--brand);
+}
+
+#reviews {
+    background-color: var(--white);
+}
+
+:root {
+    --bg1: #976705c2;
+    --bg2: #979197;
+    --body: rgb(95, 86, 86);
+    --brand: #ffef08;
+    --white: rgb(255, 255, 255);
+    --p: rgb(161, 150, 150);
+}
